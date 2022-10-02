@@ -1,0 +1,1026 @@
+
+
+Q1 of 5outlined_flag
+A system call is a
+ 
+Privileged function that requires additional permissions for shell to invoke it
+ 
+Request made by the shell to the kernel seeking a specific service check
+ 
+Request made by the kernel to the hardware resources
+ 
+All of the above
+Q2 of 5outlined_flag
+Consider cat command is executed in sequence for files 'file1', 'file2' and 'file3'. What will be the outcome of the last cat command?
+cat file1; cat file2; cat file3;
+ 
+ 
+Only content of file1 gets displayed
+ 
+Content of all the files will be diplayed check
+ 
+Only the content of file3 gets displayed
+ 
+Displays content of file1 but creates file2 and file3
+Q3 of 5outlined_flag
+Consider that cat command is executed for file1 and file2 in sequence. Which of the options gives the same output as below commands?
+cat file1;
+cat file2;
+ 
+ 
+cat file1 file2 check
+ 
+cat file1,file2
+ 
+cat file1,cat file2
+ 
+cat file1;file2
+Q4 of 5outlined_flag
+Which of the following command can be used to display Unix operating system version?
+ 
+uname -r check
+ 
+uname -t
+ 
+uname
+ 
+tty
+Q5 of 5outlined_flag
+What is the output of the following code?
+echo "var=5;var++;var" | bc
+ 
+ 
+6 6
+ 
+5 6 check
+ 
+5 5
+
+
+Which of the following commands display the characters from 10 to 20 from each line of a file
+ 
+cut -c 10-20 file check
+ 
+cut -c -20 file
+ 
+cut -c 10 20 file
+ 
+cut -c 10,20 file
+Q2 of 6outlined_flag
+Consider the following contents of a file "file1"
+Unix
+Windows
+Mac
+Consider the following content in a file file2
+Android 
+Windows
+Mac
+What would be the output of the following command ?
+comm -3 <(sort file1) <(sort file2)
+ 
+ 
+Android Mac
+ 
+Unix Android check
+ 
+Unix Mac
+ 
+Android Windows
+Q3 of 6outlined_flag
+Consider the following contents of a file "file1"
+Unix
+Windows
+Mac
+What would be the output of the following command ?
+comm file1 file1
+ 
+ 
+Unix Windows Mac
+ 
+No output
+ 
+An output with first two columns empty and the last column containing Unix, Windows and Mac check
+ 
+An output with all the three columns containing Unix Windows Mac
+Q4 of 6outlined_flag
+Consider the following contents of a file "file1"
+Unix
+Windows
+Mac
+What would be the output of the following command ?
+diff file1 file1
+ 
+No output check
+ 
+Prints an output message "Files don't differ"
+ 
+Lists out the file contents
+Q5 of 6outlined_flag
+Which of the following commands produce output that is numerically sorted based on 2nd field in the records ?
+ 
+sort -nk2 <file_name>
+ 
+sort -k2 <file_name>
+ 
+sort -nk2 -t ' ' <file_name> check
+ 
+sort -k2 -t ' ' <file_name>
+Q6 of 6outlined_flag
+Consider the following contents of a file "file1"
+Unix 1
+Windows 5
+Mac 3
+Solaris 2
+Windows 6
+Commands mentioned in which of the following options produces the below result ?
+Unix 1
+Solaris 2
+Mac 3
+Windows 5
+Windows 6
+ 
+sort -nk2 -t' ' file1 check
+sort -nk2 file1 check
+sort -k1,2 file1
+sort -k1 -k2 file1
+
+
+Q1 of 5outlined_flag
+Consider a file 'marks' containing students marks. Which of the following command can be used to find those students who have scored marks above 80?
+ 
+grep '8[1-9]' marks check
+ 
+grep '8[0-9]' marks
+ 
+grep '8[9]' marks
+Q2 of 5outlined_flag
+Assume the following contents in a file. Each field is separated by a space.
+ArtificialIntelligence AI
+MachineLearning ML
+EmbeddedSystems ES
+CloudComputing CC
+BigDataAnalytics BI
+TableauTool BI
+CodeOptimization CO
+Which of the following commands displays the last line of the input?
+ 
+grep -i "co" file
+ 
+grep -i -w "co" file check
+ 
+grep -i -b "co" file
+ 
+grep -e "co" file
+Q3 of 5outlined_flag
+Assume the following contents in a file. Each field is separated by a space.
+ArtificialIntelligence AI
+MachineLearning ML
+EmbeddedSystems ES
+CloudComputing CC
+BigDataAnalytics BI
+TableauTool BI
+CodeOptimization CO
+Which of the following is the correct set of options, that produces output as shown below?
+BigDataAnalytics BI
+TableauTool BI
+CodeOptimization CO
+ 
+ 
+grep -i -B2 "co" file
+ 
+grep -iw -B2 "co" file check
+ 
+grep –B2 "co" file
+ 
+grep -e "co" file
+Q4 of 5outlined_flag
+Assume the following contents in a file. Each field is separated by a space.
+ArtificialIntelligence AI
+MachineLearning ML
+EmbeddedSystems ES
+CloudComputing CC
+BigDataAnalytics BI
+TableauTool BI
+CodeOptimization CO
+Choose the options that produce the lines that do not match the pattern. The output should be displayed in sorted order of second field.
+grep -i -v "CO" file |sort -t ' ' -k2 check
+grep -i -v "co" file |sort -t ' ' -k2 check
+grep -i "co" file |sort -t ' ' -k2
+grep -v "co" file |sort -t ' ' -k 2,2
+Q5 of 5outlined_flag
+In a log file containing <ip_address>, <port number>, <protocol> as the first three fields, which of the following, find the number of requests coming from a given network. (Hint: first 16 bits of IP address determines network).
+Sample records with selected columns from a log file are:
+10.123.89.43 80 HTTP
+10.123.89.43 80 HTTP
+10.123.45.67 80 HTTP
+10.123.46.75 80 HTTP
+192.168.98.80 80 HTTP
+192.168.45.28 80 HTTP
+ 
+ 
+egrep -c '10.123.[0-9]+.[0-9]+' file1 check
+ 
+grep -c '10.123.[0-9]+.[0-9]+' file1
+ 
+egrep -v '10.123.[0-9]+.[0-9]+' file1
+ 
+grep -v '10.123.[0-9]+.[0-9]+' file1
+
+
+Q1 of 3outlined_flag
+Which of the following commands allow us to copy permissions of one file to another?
+ 
+chmod -f file1 file2
+ 
+chmod -version file1 file2
+ 
+chmod --reference =file1 file2 check
+ 
+chmod --recursive file1 file2
+Q2 of 3outlined_flag
+Which of the following commands change the permissions of the sub directories inside the directory.
+chmod -r ugo+x /home/user1/application_directory
+chmod -R ugo+x /home/user1/application_directory check
+chmod --recursive ugo+x /home/user1/application_directory check
+Q3 of 3outlined_flag
+Determine the umask value to set the default file permissions as 666 and directories as 777.
+ 
+0000 check
+ 
+0002
+ 
+0022
+ 
+0222
+
+
+Q1 of 5outlined_flag
+Which of the following copy commands are used to archive the data?
+ 
+cp -r access.log /home/user1/backup
+ 
+cp -l access.log /home/user1/backup
+ 
+cp -a access.log /home/user1/backup check
+ 
+cp -v access.log /home/user1/backup
+Q2 of 5outlined_flag
+An application admin has a requirement to copy the latest access log file at regular intervals and take backup of it. Which of the copy commands mentioned below copies the newer file?
+ 
+cp -v access.log /home/user1/backup
+ 
+cp -u access.log /home/user1/backup check
+ 
+cp -L access.log /home/user1/backup
+ 
+cp -R access.log /home/user1/backup
+Q3 of 5outlined_flag
+An application is hosted on Unix machine. The admin has to copy the access log file into another location for analysis. Choose the option that warns the admin in case of overwriting of the same file.
+ 
+mv -i access.log /home/user1/backup check
+ 
+mv -n access.log /home/user1/backup
+ 
+mv -f access.log /home/user1/backup
+Q4 of 5outlined_flag
+Which of the following commands relocates a set of files to a destination directory?
+ 
+cp *.log /home/user1/backup
+ 
+cp access.log /home/user1/backup
+ 
+mv *.log /home/user1/backup check
+ 
+mv -f access.log /home/user1/backup
+Q5 of 5outlined_flag
+Which of the following commands is used to extract files from archive with .tar extension?
+ 
+cpio -idv - F /home/user/accesslog.tar check
+ 
+cpio -idv /home/user/accesslog.tar
+ 
+cpio -idv - F /home/user/accesslog.cpio
+
+
+Q1 of 3outlined_flag
+A file is opened in vi editor. Which of the following deletes 3 lines from line number 1 and pastes them after line 6.
+Perform 3dd at line 1, go to line6 and press 'p' check
+Perform 3yy at line 1, then perform 3dd and go to line 6 and 'p' check
+Perform 3dd at line 1, go to line6 and press 'P'
+Perform 3xx at line 1, go to line6 and press 'p'.
+Q2 of 3outlined_flag
+Choose the vi editor command of escape mode to copy lines 4 to 8 to another file 'newtextfile.txt'.
+ 
+:4,8 >>newtextfile.txt
+ 
+:4,8w newtextfile.txt check
+ 
+:4,8 .w>>newtextfile.txt
+Q3 of 3outlined_flag
+Which of the following vi editor options is used to copy the lines that match a specific pattern to another file?
+ 
+:/pattern/.w >>newtextfile.txt check
+ 
+:/pattern/w >>newtxtfile.txt
+ 
+:/pattern/w newtextfile.txt
+ 
+:/pattern/ >newtextfile.txt
+
+
+Q1 of 2outlined_flag
+What is the output of the following code snippet?
+VAR="Learning is a "continuous" process"
+echo $VAR
+VAR="Learning is a \"continuous\" process"
+echo $VAR
+ 
+ 
+"Learning is a "continuous" process" "Learning is a \"continuous\" process"
+ 
+Learning is a continuous process Learning is a continuous process
+ 
+Learning is a continuous process Learning is a "continuous" process check
+Q2 of 2outlined_flag
+What is the output of the following code snippet?
+a=13
+readonly a
+echo $a
+a=14
+echo $a
+ 
+ 
+13 line 4: a:readonly variable check
+ 
+13 14
+ 
+13 13
+
+
+Q1 of 2outlined_flag
+What is the output of the following code snippet?
+var=4
+while [ $var -ne 0 ]
+do
+echo $var
+until [ $var -ne 4 ]
+do
+        echo $var
+done
+var=`expr $var - 1`
+done
+ 
+ 
+4 3 2 1
+ 
+4 4 4 4
+ 
+Infinite loop check
+ 
+Error
+Q2 of 2outlined_flag
+What is the output of the following code snippet?
+num_array=(10 20 30 40 50 60)
+for n in ${num_array[*]}
+do
+        until [ $n -ne 0 ]
+        do
+                echo $n
+                n=`expr $n-10`
+        done
+done
+ 
+ 
+10 20 30 40 50 60
+ 
+0 10 20 30 40 50
+ 
+Infinite loop
+ 
+No output 
+
+
+Q1 of 5outlined_flag
+Assume, Num1=5, Num2=6
+What will be the result of the below arithmetic expression?
+Num1%Num2
+ 
+5 check
+ 
+0
+ 
+-1
+ 
+1
+Q2 of 5outlined_flag
+What will be the result of the below expression?
+1==1 and (not(1==1 or 1==0))
+ 
+True
+ 
+False check
+Q3 of 5outlined_flag
+Assume that there are five variables with values as given below: 
+num1=10
+num2=5 
+num3=0 
+num4=2 
+num5=10 
+(num1==num5) and ((num2-num4*num3) == (num2-num3))
+Which among the expressions provide the same result as the above expression?
+ 
+ 
+not(num3>=num4) and (num5/num2 == num4) check
+ 
+(num2-num4*num3) <= ((num2-num4)*num3)
+ 
+not(num5>num4) or (num4+num2)>num1
+ 
+(num1==num5) and (not(num5/num2 == num1/num2))
+Q4 of 5outlined_flag
+Predict the output of the below code snippet?
+num1 = 10
+num2 = 5
+num2 *= num1
+print(num2)
+ 
+ 
+50 check
+ 
+10
+ 
+25
+ 
+100
+Q5 of 5outlined_flag
+Predict the output of the below code snippet?
+num1 = 50
+num2 = 2
+num3 = 3
+num4 = 8
+result = num1/num4-num3*num2+num4
+print(result)
+ 
+ 
+8.25 check
+ 
+100
+ 
+14.5
+ 
+-23.75
+
+
+Predict the output of the below code snippet.
+num1=100
+num2=200
+num3=6
+if(5>=num3):
+    if(num1>100 or num2>150):
+        print("1")
+elif(num1>=100 and num2>150):
+    print("2")
+else:
+    print("3")
+ 
+ 
+1
+ 
+2 check
+ 
+3
+Q2 of 7outlined_flag
+What should be the value of num1 and num2 to get the output as "1"?
+if((num1/num2==5) and (num1+num2)>5):
+    print("1")
+elif((num1-num2)<=1 or (num1%num2)==0):
+    print("2")
+else:
+    print("3")
+ 
+ 
+num1=11, num2=2
+ 
+num1=0, num2=5
+ 
+num1=5, num2=1 check
+ 
+num1=-10,num2=2
+Q3 of 7outlined_flag
+Predict the output of the below code snippet.
+a = -10
+b = -200
+c = 2000
+d = 4000
+if( a*b >=d):
+    if(d>c):
+        if(d%c!=0):
+            print(11)
+        else:
+            print(22)
+else:
+    if(b/a >0):
+        if(a<b or d%c!=0):
+          print(33)
+        else:
+          print(44)
+ 
+ 
+11
+ 
+22
+ 
+33
+ 
+44 check
+Q4 of 7outlined_flag
+Predict the output of the below code snippet.
+for number in 10,15:
+    for counter in range(1,3):
+        print(number*counter, end=" ")
+ 
+ 
+10 20 30 15 30 45
+ 
+10 15 20 30 30 45
+ 
+10 15 20 30
+ 
+10 20 15 30 check
+Q5 of 7outlined_flag
+Predict the output of the below code snippet.
+number=28
+for num in range(25,30):
+    if(number>num):
+        print(num)
+    else:
+        print(num)
+        break
+i)  28
+ii) 25
+    26
+    27
+    28
+
+iii)25
+    26
+    27
+iv) 25
+    26
+    27
+    28
+    29
+ 
+ 
+i
+ 
+ii check
+ 
+iii
+ 
+iv
+Q6 of 7outlined_flag
+Predict the output of the below code snippet.
+for num in 23, 45, 50, 65, 76, 90:
+    if(num%5!=0):
+        continue
+    if(num%10==0):
+        print(num, end=" ")
+        continue
+    if(num%3==0):
+        print(num, end=" ")
+ 
+ 
+45 50 90 check
+ 
+45 50 65 90
+ 
+45 90
+ 
+23 76
+Q7 of 7outlined_flag
+What should be the value of the variables num1 and num2 in the code below if the output expected is 4?
+num1=?
+num2=?
+while(num1>=2):
+    if(num1>num2):
+        num1=num1/2
+    else:
+        print(num1)
+        break
+ 
+ 
+12, 5
+ 
+8, 2
+ 
+16, 6 check
+ 
+16, 2
+
+Q1 of 5outlined_flag
+Match the following based on the collect_tax() function given below:
+def collect_tax(x,y):
+    tax=x+y
+    return tax
+
+a=5000
+b=12000
+result=collect_tax(a,b)
+print(result)
+a) def collect_tax(x,y):                     i)  formal arguments
+b) collect_tax(a,b)                           ii)  actual arguments
+c) a,b                                             iii) function call
+d) x,y                                             iv) function signature
+Select correct answer from the options given below.
+ 
+a->ii, b->i, c->iv, d->iii
+ 
+a->iv, b->iii, c->i, d->ii
+ 
+a->iv, b->iii, c->ii, d->i check
+ 
+a->iii, b->iv, c->ii, d->i
+Q2 of 5outlined_flag
+Choose the most appropriate function call needed at line 4 to get the output as ‘Result: 4’.
+def check_value(message,num):
+    msg=message[:num]
+    return len(msg)
+
+#line 4:function call statement 
+print("Result:", result)
+ 
+ 
+result=check_value('Infosys',3)  
+ 
+result=check_value(4,'Infosys')
+ 
+result=check_value('Infosys',len('Infosys')) 
+ 
+result=check_value('Infosys',4) check
+Q3 of 5outlined_flag
+Predict the output of the following code snippet.
+def verify(num1,num2):
+    if num1 > num2:
+        return num1
+    elif num1 == num2:
+        return 1
+    else:
+        return num2
+
+def display(arg1,arg2):
+    if(verify(arg1,arg2)==arg1):
+        print("A")
+    elif(verify(arg1,arg2)==1):
+        print("C")
+    else:
+        print("B")
+        
+display(1000,3500)
+ 
+ 
+A
+ 
+B check
+ 
+C
+Q4 of 5outlined_flag
+Predict the output of the following code snippet.
+result=0
+
+def find_sum(num1,num2):
+    if(num1!=num2):
+        result=num1+num2
+    else:
+        result=2*(num1+num2)
+
+find_sum(3,4)
+print(result)
+find_sum(5,5)
+print(result)
+a) 0
+   0
+b) 7
+   20
+c) 14
+   10
+d) Error:cannot modify global variable in a program
+ 
+a check
+ 
+b
+ 
+c
+ 
+d
+Q5 of 5outlined_flag
+Predict the output of the below code snippet.
+def find_avg(list_num):
+    result_sum=0
+    for num in list_num:
+        result_sum+=num
+    result_avg=result_sum/len(list_num)
+find_avg([5,8,5])
+print(result_avg)
+ 
+ 
+None
+ 
+0.0
+ 
+6.0
+ 
+Error: 'result_avg' is not defined 
+
+Q1 of 5outlined_flag
+Which among the following statements may result in an error?
+Assume that the statements are executed in the order in which it is written.
+a.list1=[5,10,15,20,25]
+b.print(len(list1))
+c.print(list1[4])
+d.print(list1[5])
+e.print(list1[4:5])
+f.list1[2]=12
+g.print(list1)
+h. list1=list1+[8,9]
+ 
+ 
+b
+ 
+d check
+ 
+e
+ 
+h
+Q2 of 5outlined_flag
+Predict the output of the below code snippet.
+my_list=[0]*5
+for index in range(1,5):
+	my_list[index]=(index-1)*10
+print(my_list)
+ 
+ 
+[0, 0, 0, 0, 0]
+ 
+[10, 20, 30, 40, 50]
+ 
+[0, 0, 10, 20, 30] check
+ 
+[0, 10, 20, 30, 40]
+Q3 of 5outlined_flag
+Which among the following statements will cause execution to stop as a result of an error?
+Assume that the statements are executed in the order in which it is written.
+a.tuple1=(5,10,15,20,25)
+b.print(len(tuple1))
+c.tuple1[2]=100
+d.print(tuple1[5])
+e. tuple1=tuple1+(8,9,"h")
+ 
+ 
+e
+ 
+d
+ 
+c check
+ 
+None as there is no error in the code
+Q4 of 5outlined_flag
+Consider the following list of pan card numbers:
+pancard_list=["AABGT6715H", "UFFAC4352T", "IFSBD9163K", "JOOEC1225H","RWXAFE187B"]
+What is the output of the below two print statements?
+print(pancard_list[3][6], end=" ")
+print(pancard_list[4][3:])
+ 
+ 
+9 OEC1225H
+ 
+2 AFE187B check
+ 
+9163K O
+ 
+225H A
+Q5 of 5outlined_flag
+Predict the output of the below code snippet.
+message="welcome to Mysore"
+word=message[-7:]
+if(word=="Mysore"):
+    print("got it")
+else:
+    message=message[3:14]
+    print(message)
+ 
+ 
+come to Mys check
+ 
+got it
+ 
+erosyM
+ 
+lcome to Myso
+
+Q1 of 4outlined_flag
+Predict the output of the following code snippet.
+song="JINGLE Bells jingle Bells Jingle All The Way"
+song.upper()
+song_words=song.split()
+count=0
+for word in song_words:
+    if(word.startswith("jingle")):
+        count=count+1
+print(count)
+ 
+ 
+0
+ 
+3
+ 
+2
+ 
+1 check
+Q2 of 4outlined_flag
+Predict the output of the following code snippet.
+sample_dict={'a':1,'b':2}
+sample_dict.update({'b':5, 'c':10 })
+print(sample_dict.get('a'),sample_dict.get('b'),sample_dict.get('c'))
+ 
+ 
+None 5 10
+ 
+1 5 10 check
+ 
+1 5 None
+ 
+1 2 10
+Q3 of 4outlined_flag
+Predict the output of the following code snippet.
+import re
+word="New Airlines4"
+if(re.search(r"^N",word) and re.search(r"e$",word)):
+    print(re.sub(r"New",r"Old",word))
+else:
+    print(re.sub(r"s(\d{1})",r"S\1",word))
+ 
+ 
+New Airlines4
+ 
+New AirlineS
+ 
+New AirlineS4 check
+ 
+Old Airlines4
+Q4 of 4outlined_flag
+Predict the output of the following code snippet.
+import math
+num_list=[100.5,30.465,-1.22,20.15]
+num_list.insert(1, -100.5)
+num_list.pop(0)
+num_list.sort()
+print(math.ceil(math.fabs(num_list[0])))
+ 
+ 
+101 check
+ 
+100
+ 
+30
+ 
+31
+
+Q1 of 4outlined_flag
+Assume there are two modules called mod1 and mod2 each of them contains function fun1 respectively. Which of below import statements will import fun1 from both modules successfully?
+i)   from mod1 import fun1
+     from mod2 import fun1
+ii)  import mod1.fun1
+     import mod2.fun1
+iii) from mod1 import fun1 as f1
+     from mod2 import fun1 as f2
+iv)  import fun1 from mod1
+     import fun1 from mod2
+ 
+i & ii
+ 
+ii & iii check
+ 
+iii & iv
+ 
+all of the above
+Q2 of 4outlined_flag
+In which of the following access mode of the open() function, contents of the file will be truncated?
+ 
+ 
+r(read)
+ 
+w(write) check
+ 
+a(append)
+ 
+all of the above
+Q3 of 4outlined_flag
+Which of the following function is used to read the contents of file into a list variable?
+ 
+read()
+ 
+readline()
+ 
+readlines() check
+ 
+readlist()
+Q4 of 4outlined_flag
+Which of below code is used for navigating to 14th character from beginning of a file?
+ 
+file.seek(14,1)
+ 
+file.seek(14,2)
+ 
+file.seek(14,0) check
+ 
+file.seek(14,3)
+
+Predict the output of the code given below.
+num1=100
+num2=0
+try:
+    result=num1/num2
+    print(result)
+except ZeroDivisionError:
+    print("Zero Division Error Occurred")
+
+ 
+ 
+0
+ 
+100
+ 
+Zero Division Error Occurred check
+Q2 of 3outlined_flag
+Predict the output of the code given below.
+def division(a,b):
+    try:
+        return int(a)/b
+    except TypeError:
+        print("Type error")
+    except ValueError:
+        print("Value error")
+    finally:
+        print("Finally")
+    print("Done")
+division('A',10)
+a)  Value error
+    Finally
+    Done
+b)  Type error
+    Finally
+    Done
+c)  Type error
+    Finally
+d)  Value error
+    Finally
+ 
+a check
+ 
+b
+ 
+c
+ 
+d
+Q3 of 3outlined_flag
+Predict the output of the code given below.
+def find_sum(a,b):
+    try:
+        print(a+c)
+    except NameError:
+        print("Function name error")
+    finally:
+        print("Sum finally")
+try:
+    find_sum(12,13)
+except NameError:
+    print("Invocation name error")
+finally:
+    print("Invocation finally")
+a)  Function name error
+    Sum finally
+b)  Function name error
+    Sum finally
+    Invocation finally
+
+c)  Function name error
+    Sum finally
+    Invocation name error
+    Invocation finally
+    
+d)  Sum finally
+    Invocation name error
+    Invocation finally
+ 
+ 
+a
+ 
+b check
+ 
+c
+ 
+d
+
+
+
